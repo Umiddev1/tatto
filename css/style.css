@@ -1,0 +1,200 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --font-family-prata:'Prata', serif;
+    --font-family-heebo:'Heebo', sans-serif;
+    --text-color-content:#fff;
+}
+
+.title-group {
+    position: relative;
+    left: -60px;
+}
+
+.title-background {
+    font-size: 120px;
+    font-weight: 400px;
+    color: #ccc;
+    position: absolute;
+    opacity: 0.2;
+    top: -140px;
+    left: -150px;
+    letter-spacing: 10px;
+}
+
+.title-latest {
+    font-family: var(--font-family-prata);
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+.text {
+    margin: 0;
+    color: #8B8B8B;
+    font-family: var(--font-family-heebo);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pictures-gallary {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(5,auto);
+    grid-gap: 40px;
+}
+.img-box:hover .pic-content{
+    transform: translate(0,-10%);
+    opacity: 1;
+}
+.pic-content {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    padding: 1.25rem 1.875rem;
+    opacity: 0;
+    transition: transform 0.7s ease;
+}
+
+.img-box:hover .pictures {
+    opacity: 0.6;
+}
+.pictures {
+    width: 100%;
+    transition: opacity 0.7s ease;
+}
+
+.tat-woman {
+    position: relative;
+}
+
+.mantato {
+    position: relative;
+}
+
+.girl {
+    position: relative;
+}
+
+.moto {
+    position: relative;
+}
+
+.lover {
+    position: relative;
+    bottom: 300px;
+}
+.womanwhite {
+    position: relative;
+    bottom: 300px;
+}
+
+.most {
+    position: relative;
+    bottom: 300px;
+}
+
+.womanboy {
+    position: relative;
+}
+
+.freedom {
+    position: relative;
+    bottom: 300px;
+}
+
+.tat-woman-content {
+    top: 10px;
+}
+
+.girl-content {
+    top: 10px;
+}
+
+.content-woman-boy {
+    top: 10px;
+}
+.content-title {
+    color: var(--text-color-content);
+    font-family: var(--font-family-heebo);
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.content-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(235, 188, 128);
+    margin: 0 8px;
+    transition: background 0.3s ease;
+}
+
+.content-item:hover {
+    background-color: rgba(255, 255, 255, 0.822);
+}
+
+.con-link {
+    display: inline-block;
+    color: var(--text-color-content);
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 13px;
+    transition: color 0.3s ease;
+}
+.con-link:hover {
+    color: #252525;
+}
+
+.view-more {
+    position: absolute;
+    left: 560px;
+    font-family: var(--font-family-heebo);
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    fill: #FFFFFF;
+    color: var(--text-color-content);
+    background-color: #715C41;
+    border-radius: 0px 0px 0px 0px;
+    padding: 20px 40px 20px 40px;
+    transition: all 0.4s ease;
+}
+.view-more:hover {
+    background-color: hsl(34, 51%, 81%);
+    color: #252525;
+}
